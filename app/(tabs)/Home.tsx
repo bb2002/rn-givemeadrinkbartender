@@ -41,7 +41,7 @@ export default function Home() {
           params: {
             ...recipe,
           },
-          timeout: 5000,
+          timeout: 50000,
         });
 
         if (response.status === HttpStatusCode.Ok) {
@@ -59,7 +59,7 @@ export default function Home() {
             ToastAndroid.BOTTOM
           );
         }
-      } catch (ex) {
+      } catch (ex: any) {
         ToastAndroid.show(
           "바텐더에게 요청 할 수 없습니다.",
           ToastAndroid.BOTTOM
@@ -152,7 +152,7 @@ export default function Home() {
               price={3800}
             />
             <MenuBox
-              image={require("@/assets/icons/logo.png")}
+              image={require("@/assets/icons/vodka_sunrise.png")}
               text="보드카선라이즈"
               onClicked={() => onMenuSelected(Recipes.vodkaSunrise, 4000)}
               price={4000}
@@ -160,19 +160,19 @@ export default function Home() {
           </View>
           <View style={styles.row}>
             <MenuBox
-              image={require("@/assets/icons/logo.png")}
+              image={require("@/assets/icons/peach_pleasure.png")}
               text="피치 플레져"
               onClicked={() => onMenuSelected(Recipes.peachPleasure, 4200)}
               price={4200}
             />
             <MenuBox
-              image={require("@/assets/icons/logo.png")}
+              image={require("@/assets/icons/peach_cranburst.png")}
               text="피치크랜버스트"
               onClicked={() => onMenuSelected(Recipes.peachCranburst, 4400)}
               price={4400}
             />
             <MenuBox
-              image={require("@/assets/icons/logo.png")}
+              image={require("@/assets/icons/cranberry_puccini.png")}
               text="크랜베리푸치니"
               onClicked={() => onMenuSelected(Recipes.cranberryPuccini, 4600)}
               price={4600}

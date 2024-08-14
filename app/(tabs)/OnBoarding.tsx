@@ -21,9 +21,9 @@ const OnBoardingScreen = () => {
     setLoading(true);
     (async () => {
       // DEBUG
-      await AsyncStorage.setItem(AsyncStorageKey.IPAddress, ipAddress);
-      await AsyncStorage.setItem(AsyncStorageKey.credit, "10000");
-      router.replace("/Home");
+      // await AsyncStorage.setItem(AsyncStorageKey.IPAddress, ipAddress);
+      // await AsyncStorage.setItem(AsyncStorageKey.credit, "10000");
+      // router.replace("/Home");
       ////////
 
       try {
